@@ -1,0 +1,4 @@
+*
+!.gitignore
+!mapping.conf
+!ssl.conf

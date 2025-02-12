@@ -1,0 +1,10 @@
+*
+!.gitignore
+!50-mod-http-auth-pam.conf
+!50-mod-http-dav-ext.conf
+!50-mod-http-echo.conf
+!50-mod-http-geoip2.conf
+!50-mod-http-subs-filter.conf
+!50-mod-http-upstream-fair.conf
+!50-mod-stream.conf
+!70-mod-stream-geoip2.conf
