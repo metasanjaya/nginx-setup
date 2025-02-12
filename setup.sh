@@ -10,10 +10,6 @@ chown -R www-data:www-data /tmp/nginx
 cp -rf /etc/nginx /etc/nginx.bak
 rm -rf /etc/nginx
 cp -rf ./nginx /etc/nginx
-mkdir -p /root/init.d
-cp -rf /etc/init.d/nginx /root/init.d/nginx
-rm -f /etc/init.d/nginx
-cp -rf ./init.d/nginx /etc/init.d/nginx
 openssl req -x509 -newkey rsa:4096 -keyout /etc/nginx/ssl/self-signed-key.pem -out /etc/nginx/ssl/self-signed-cert.pem -sha256 -days 3650 -nodes -subj "/C=XX/ST=LO/L=LOCAL/O=LOCALNET/OU=LOCAL/CN=localhost"
 openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
 
