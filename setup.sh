@@ -21,7 +21,7 @@ nvm install 20
 
 ## UFW SETTING 
 # sed -i 's/Port 22/Port 22\nPort 2828/g' /etc/ssh/sshd_config
-# ufw allow from 45.118.135.162
+# ufw allow from IP
 # ufw allow 22
 # ufw enable
 # for cfip in `curl -sw '\n' https://www.cloudflare.com/ips-v{4,6}`; do ufw allow proto tcp from $cfip to any port 80,443 comment 'Cloudflare IP'; done
